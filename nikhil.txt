@@ -1,0 +1,117 @@
+#include<stdio.h>
+#include<conio.h>
+struct node
+{
+int num;
+int coeff;
+struct node *next;
+};
+struct node *start1 = NULL;
+struct node *start2 = NULL;
+struct node *start3 = NULL;
+struct node *start4 = NULL;
+struct node *last3  = NUll;
+struct node *create_poly(struct node *);
+struct node *display_poly(struct node *);
+struct node *add_poly(struct node *,struct node *,struct node *);
+struct node *sub_poly(struct node *,struct node *,struct node *);
+struct node *add_node(struct node *,int,int);
+int main()
+{
+ int option;
+do
+{
+printf("\n******* MAIN MENU *******");
+printf("\n 1. Enter the first polynomial");
+printf("\n 2. Display the second polynomial");
+pritnf("\n 3. Enter the second polynomial");
+printf("\n 4. Display the second polynomial");
+printf("\n 5. Add the polynomials");
+printf("\n 6. Dispaly the result");
+printf("\n 7. Subtract the polynomials");
+printf("\n 8. Display the result");
+printf("\n 9. Exit");
+printf(\n\n Enter your option : ");
+scanf("%d", &option);
+switch(option)
+{
+case 1: start1 = create_poly(start1);
+break;
+case 2: start1 = display_poly(start1);
+break;
+case 3: start2 = create_poly(start2);
+break;
+case 4: start2 = display_poly(start2);
+break;
+case 5: start3 = add_poly(start1 ,start2 ,start3);
+break;
+case 6: start3 = display_poly(start3);
+break;
+case 7: start4 = sub_poly(start1, start2, start4)
+break;
+case 8: start4 = display_poly*(start4);
+break;
+}
+}while(option!=9);
+return 0;
+}
+struct node *create_poly(struct noe *start)
+{
+struct node *new_nodee, *ptr;
+int n,c;
+printf("\n Enter the number :")
+scanf("%",&n);
+printf("\t Enter its coefficient:");
+scanf("%d", &c);
+while(n != -1)
+{
+if(start==NULL)
+{
+new_node = (struct node *)malloc(sizeof(struct node));
+new_node -> num =n;
+new_node -> coeff = c;
+new_npode -> next = NULL;
+start = new_node;
+}
+else
+{
+ptr = start;
+
+while(ptr -> next != NULL)
+ptr = ptr -> next;
+new_node = (struct node *)malloc(sizeof*(struct node));
+num_node -> num =n;
+new_node -> coeff =c;
+
+new_node ->next = NULL;
+ptr -> next =new_node;
+}
+printf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
